@@ -1,0 +1,65 @@
+@import 'reset.postcss';
+
+:root {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 10px;
+}
+
+main {
+	margin: 0 auto;
+	max-width: 1300px;
+}
+
+nav {
+	height: 55px;
+	width: 100%;
+	position: relative;
+	.container {
+		height: inherit;
+		width: inherit;
+		background-color: #f4f5f5;
+		position: fixed;
+
+		border-color: rgb(228 228 231);
+		border-style: solid;
+		border-bottom-width: 1px;
+
+		.container_content {
+			display: flex;
+			justify-content: flex-start;
+			height: inherit;
+			width: inherit;
+			padding: 0 2rem;
+			max-width: 1300px;
+			margin: 0 auto;
+
+			.home_button {
+				text-decoration: none;
+				display: flex;
+				justify-content: flex-start;
+				align-items: center;
+
+				.icon {
+					transition: fill 0.25s;
+					fill: rgb(50, 50, 50);
+				}
+
+				&:hover {
+					.icon {
+						fill: rgb(20, 20, 20);
+					}
+					.logo {
+						color: rgb(20, 20, 20);
+					}
+				}
+
+				.logo {
+					color: rgb(50, 50, 50);
+					font-weight: 300;
+					font-family: 'Roboto Mono', monospace;
+					font-size: 20px;
+				}
+			}
+		}
+	}
+}

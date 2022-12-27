@@ -1,0 +1,11 @@
+[
+	{
+		"id": "tiktok-video-downloader",
+		"name": "TikTok Video Downloader",
+		"logo": "tik-tok-logo-transparent-square.png",
+		"version": "0.1.0",
+		"description": "API for downloading TikTok videos. Does not work with slideshows",
+		"release_date": "December 27, 2022",
+		"update_date": "December 27, 2022"
+	}
+]
