@@ -1,1 +1,11 @@
-[]
+[
+	{
+		"id": "vidtok",
+		"name": "VidTok",
+		"logo": "tik-tok-logo-transparent-square.png",
+		"version": "0.1.0",
+		"description": "Shortcut for downloading TikTok videos. Does not work with slideshows",
+		"release_date": "December 28, 2022",
+		"update_date": "December 28, 2022"
+	}
+]
