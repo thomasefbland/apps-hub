@@ -9,6 +9,7 @@
 - Automatically update version numbers on info page
 - Sort by recently updated, newest released, oldest released, and alphabetical on Apps page
 - Sort by alphabetical within other sort categories
+- API endpoint for Shortcut info to be used by Shortcuts to check for updates
 
 ## To-Do
 
@@ -22,3 +23,4 @@
 - Redirect from _apps/\[appId]/shortcut/_ to _shortcuts/\[shortcutId]/info/_ where it applies
 - Redirect from _shortcuts/\[shortcutId]/app/_ to _apps/\[appId]/info/_ where it applies
 - API rate limit?
+- SEO Optimization

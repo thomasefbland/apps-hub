@@ -3,13 +3,15 @@
 
 	import { error } from '@sveltejs/kit';
 	import type { PageData } from './$types';
+	import type ShortcutJSON from 'src/types/ShortcutJSON';
+	import type AppJSON from 'src/types/AppJSON';
 
 	export let data: PageData;
 
 	if (data.appinfo == null) throw error(500, 'Could not load data');
 
-	let appinfo = data.appinfo;
-	let shortcut = appinfo.shortcut ? data.shortcutsinfo.find((shortcut) => shortcut.id === appinfo.shortcut) : null;
+	let appinfo: AppJSON = data.appinfo;
+	let shortcut: ShortcutJSON | undefined = appinfo.shortcut ? data.shortcutsinfo.find((shortcut) => shortcut.id === appinfo.shortcut) : undefined;
 </script>
 
 <main>

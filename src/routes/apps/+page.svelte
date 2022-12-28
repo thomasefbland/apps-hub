@@ -3,11 +3,12 @@
 
 	import { error } from '@sveltejs/kit';
 	import type { LayoutData } from '../$types';
+	import type AppJSON from 'src/types/AppJSON';
 
 	export let data: LayoutData;
 	if (data.appsinfo == null) throw error(500, 'Could not load data');
 
-	let sorted_apps = data.appsinfo;
+	let sorted_apps: AppJSON[] = data.appsinfo;
 	let sortMenuVisibility = false;
 
 	function sortApps(sortBy: number) {
